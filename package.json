@@ -1,0 +1,29 @@
+{
+    "name": "sphere-demo-client",
+    "version": "0.0.1",
+    "description": "An asynchronous client using the Sphere.io API for demonstration cases",
+    "main": "chat/server/LongPollingChat.js",
+    "scripts": {
+        "start": "node chat/server/LongPollingChat.js",
+        "test": "nodeunit chat/test/server"
+    },
+    "engines": {
+        "node": "0.10.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/anotherSasFeld/deploymentExample.git"
+    },
+    "keywords": [
+        "node",
+        "heroku",
+        "longpolling",
+        "chat"
+    ],
+    "license": "MIT",
+    "author": {
+        "name" : "Sascha Feldmann",
+        "email" : "sascha.feldmann@gmx.de",
+        "url" : "http://saschafeldmann.de"
+    }
+}
