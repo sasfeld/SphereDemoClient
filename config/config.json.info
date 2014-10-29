@@ -1,0 +1,11 @@
+//
+// Copy this file to 'config.json' and fill in the info below
+//
+
+{
+    "sphere" : {
+        "client_id" : "",
+        "client_secret" : "",
+        "project_key" : ""
+    }
+}

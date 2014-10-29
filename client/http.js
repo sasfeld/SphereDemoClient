@@ -6,7 +6,7 @@
  * Author: Sascha Feldmann (sascha.feldmann@gmx.de)
  */
 var http = require('http');
-var url = require('url');
+var urlUtil = require('url');
 
 /*
  * Constants
@@ -42,22 +42,30 @@ Client = function() {
 
         body = body || "";
 
-        var parsedUrl = url.parse(url);
+        var parsedUrl = urlUtil.parse(url);
+        var port = parsedUrl.port || 80;
+
+        global.app.log('hostname: ' + parsedUrl.hostname);
+        global.app.log('port: ' + port);
+        global.app.log('path: ' + parsedUrl.path);
+        global.app.log('method: ' + method)
+        global.app.log('auth: ' + parsedUrl.auth)
 
         var httpOptions = {
             host: parsedUrl.hostname,
-            port: parsedUrl.port,
+            port: port,
             path: parsedUrl.path,
+            auth: parsedUrl.auth || '',
             method: method
         };
 
-        var request = http.request(options, callbackFunction);
+        var request = http.request(httpOptions, callbackFunction);
         try {
             if ('' !== body) {
                 request.write(body);
             }
-        } catch ( e ) {
             request.end();
+        } catch ( e ) {
         }
     }
 }
@@ -80,7 +88,7 @@ Client.prototype.doPost = function(url, body, callbackFunction)
  */
 Client.prototype.doGet = function(url, callbackFunction)
 {
-    this.doRequest(url, HTTP_METHOD_GET, body, callbackFunction);
+    this.doRequest(url, HTTP_METHOD_GET, undefined, callbackFunction);
 }
 
 /**

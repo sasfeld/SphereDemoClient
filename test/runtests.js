@@ -24,4 +24,4 @@ try {
 app.app.doBootstrap();
 
 process.chdir(__dirname);
-reporter.run(['test']);
+reporter.run(['integration/client']);
