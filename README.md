@@ -1,4 +1,4 @@
-LongPollingChat  <a href="https://travis-ci.org/sasfeld/SphereDemoClient" title="Travis Build Status"><img src="https://travis-ci.org/sasfeld/SphereDemoClient.svg" alt="Travis Build Status"/></a>
+SphereDemoClient  <a href="https://travis-ci.org/sasfeld/SphereDemoClient" title="Travis Build Status"><img src="https://travis-ci.org/sasfeld/SphereDemoClient.svg" alt="Travis Build Status"/></a>
 =========
 
 This is a demonstration client to test the Sphere API asynchronously.
