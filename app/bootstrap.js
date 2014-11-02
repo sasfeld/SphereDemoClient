@@ -6,10 +6,14 @@
  * Author: Sascha Feldmann (sascha.feldmann@gmx.de)
  */
 
-
-
 var http = require('../client/http');
-var config = require('../config/config.json');
+
+if (undefined === process.env.CONFIG_FILE) {
+    var config = require('../config/config.json');
+} else {
+    var config = require(process.env.CONFIG_FILE);
+}
+
 var querystring = require('querystring');
 var productCollection = require('../product/pagination/collection');
 
