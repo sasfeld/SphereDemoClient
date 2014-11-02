@@ -1,4 +1,14 @@
 /**
- * Created by slash1990 on 29.10.2014.
+ * Sphere Demo Client
+ *
+ * Main class to run the application on a command line.
+ *
+ * Author: Sascha Feldmann (sascha.feldmann@gmx.de)
  */
 
+var bootstrap = require('./bootstrap');
+
+var app = bootstrap.app;
+
+// bootstrap application
+app.doBootstrap();

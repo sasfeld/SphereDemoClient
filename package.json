@@ -25,5 +25,8 @@
         "name" : "Sascha Feldmann",
         "email" : "sascha.feldmann@gmx.de",
         "url" : "http://saschafeldmann.de"
+    },
+    "dependencies": {
+        "request": "2.9.x"
     }
 }
