@@ -20,8 +20,6 @@ try {
     process.exit();
 }
 
-// do application bootstrap
-app.app.doBootstrap();
 
 process.chdir(__dirname);
 reporter.run(['integration/client']);
