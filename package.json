@@ -4,8 +4,8 @@
     "description": "An asynchronous client using the Sphere.io API for demonstration cases",
     "main": "chat/server/LongPollingChat.js",
     "scripts": {
-        "start": "node chat/server/LongPollingChat.js",
-        "test": "nodeunit chat/test/server"
+        "start": "node app/main.js",
+        "test": "nodeunit test/runtests.js"
     },
     "engines": {
         "node": "0.10.x"
@@ -27,6 +27,7 @@
         "url" : "http://saschafeldmann.de"
     },
     "dependencies": {
-        "request": "2.9.x"
+        "request": "2.9.x",
+        "nodeunit": "0.9.0"
     }
 }
