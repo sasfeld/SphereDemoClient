@@ -11,7 +11,7 @@ var http = require('../client/http');
 if (undefined === process.env.CONFIG_FILE) {
     var config = require('../config/config.json');
 } else {
-    var config = require(process.env.CONFIG_FILE);
+    var config = require('../config/' + process.env.CONFIG_FILE);
 }
 
 var querystring = require('querystring');
