@@ -3,6 +3,7 @@ LongPollingChat  <a href="https://travis-ci.org/sasfeld/SphereDemoClient" title=
 
 This is a demonstration client to test the Sphere API asynchronously.
 
+It is based on a simple Node.JS application. Therefore, please install Node.JS and the package manager npm.
 
 Run the client
 ------------
